@@ -1,0 +1,84 @@
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.infozona.proyectotoronto.GuardarActivity"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    tools:ignore="MergeRootFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">    
+    
+     
+<RelativeLayout 
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.infozona.proyectotoronto.SettingsActivity"
+    tools:ignore="MergeRootFrame"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+    
+    
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnGuardar"
+        android:background="@drawable/button_background_states"
+        style="@style/ShadowText"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FCFCFC" />
+
+    <Spinner
+        android:id="@+id/spnDepartamentoSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblCercanos"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spnDepartamentoSettings"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txtDepartamento"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtAcercaDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/npiDistancia"
+        android:text="@string/txtMetros"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblCercanos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtAcercaDe"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/txtCercanos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <NumberPicker
+        android:id="@+id/npiDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/txtAcercaDe"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>
+
+</ScrollView>

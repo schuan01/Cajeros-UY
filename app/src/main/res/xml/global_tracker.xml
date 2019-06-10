@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name = "ga_sessionTimeout">3000</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    
+    <screenName name="com.infozona.proyectotoronto.InicioActivity">
+        Cajeros UY InicioActivity
+    </screenName>
+    
+    <screenName name="com.infozona.proyectotoronto.MapaActivity">
+        Cajeros UY MapaActivity
+    </screenName>
+    
+    <screenName name="com.infozona.proyectotoronto.AcercaDe">
+        Cajeros UY AcercaDeActivity
+    </screenName>
+    
+    <screenName name="com.infozona.proyectotoronto.SettingsActivity">
+        Cajeros UY SettingsActivity
+    </screenName>
+    
+    <string name="ga_trackingId">UA-60369825-1</string>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    
+</resources>

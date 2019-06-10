@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.infozona.proyectotoronto.GuardarActivity"
+    tools:ignore="MergeRootFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<RelativeLayout android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ 
+    <TextView
+        android:id="@+id/txtAcercaDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="@string/guardar_titulo"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/txtNombre"
+        android:text="@string/guardar_Nombre" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtAcercaDe"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtNombre"
+        android:layout_marginTop="16dp"
+        android:text="@string/guardar_Direccion" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/txtDireccion"
+        android:layout_marginTop="20dp"
+        android:text="@string/guardar_tipo" />
+
+    <Spinner
+        android:id="@+id/spnTipos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDireccion"
+        android:layout_alignTop="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtLatitud"
+        android:layout_alignParentLeft="true"
+        android:text="@string/guardar_Latitud" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/spnTipos"
+        android:text="@string/guardar_departamento" />
+
+    <Spinner
+        android:id="@+id/spnDepartamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLatitud"
+        android:layout_below="@+id/TextView01" />
+
+    <EditText
+        android:id="@+id/txtLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnTipos"
+        android:layout_below="@+id/txtLatitud"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/txtLongitud"
+        android:text="@string/guardar_Longitud" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLongitud"
+        android:layout_alignTop="@+id/spnDepartamentos"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnGuardarCajero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtLongitud"
+        android:layout_below="@+id/txtLongitud"
+        android:text="@string/guardar_GuardarCajero" />
+
+</RelativeLayout>
+</ScrollView>

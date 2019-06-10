@@ -1,0 +1,95 @@
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.infozona.proyectotoronto.InicioActivity"
+    tools:ignore="MergeRootFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">   
+
+<RelativeLayout 
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.infozona.proyectotoronto.InicioActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:src="@drawable/incio_texto" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        style="@style/ShadowText"
+        android:layout_width="@dimen/ancho_boton"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background_states"
+        android:gravity="center"
+        android:text="@string/btnInicio"
+        android:textColor="#FCFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMostrarSoloRedBrou"
+        style="@style/ShadowText"
+        android:layout_width="@dimen/ancho_boton"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMostrarSoloBanred"
+        android:layout_below="@+id/btnMostrarSoloBanred"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_background_states"
+        android:drawableLeft="@drawable/logo_brou"
+        android:gravity="center"
+        android:text="@string/btnMostrarSoloRedBrou"
+        android:textColor="#FCFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMostrarSoloBanred"
+        style="@style/ShadowText"
+        android:layout_width="@dimen/ancho_boton"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnInicio"
+        android:layout_below="@+id/btnInicio"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background_states"
+        android:drawableLeft="@drawable/logo_banred"
+        android:gravity="center"
+        android:text="@string/soloBanred"
+        android:textColor="#FCFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMostrarPorDepartamento"
+        style="@style/ShadowText"
+        android:layout_width="@dimen/ancho_boton"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMostrarSoloRedBrou"
+        android:layout_below="@+id/spnDepartamentosInicio"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background_states"
+        android:gravity="center"
+        android:text="@string/btnMostrarDepartamento"
+        android:textColor="#FCFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnDepartamentosInicio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnMostrarSoloRedBrou"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
+</ScrollView>

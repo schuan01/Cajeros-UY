@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Category 1">
+	    <EditTextPreference
+android:summary="Distancia"
+android:defaultValue="3"
+android:title="Distancia en Kilometros"
+android:key="editTextPref" />
+	    <EditTextPreference
+android:summary="Departamentos"
+android:defaultValue="Montevideo"
+android:title="Departamentos"
+android:key="spnDepartamentosSetting" />
+	</PreferenceCategory>
+</PreferenceScreen>
